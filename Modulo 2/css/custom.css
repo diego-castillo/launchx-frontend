@@ -1,0 +1,203 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  color: #5a5a5a;
+  font-family: 'Jost', sans-serif;
+}
+
+h1 {
+  color: #EF7373;
+  font-size: 2rem;
+}
+
+a {
+  color: #EF7373;
+  text-decoration: none;
+  -webkit-transition: all 0.5s 0s ease;
+  -moz-transition: all 0.5s 0s ease;
+  -o-transition: all 0.5s 0s ease;
+  transition: all 0.5s 0s ease;
+}
+
+
+a:hover {
+  color: #CC4C4C;
+}
+
+header {
+  padding: 2rem 0;
+}
+.navbar-custom {
+  background-color: #ffffff;
+}
+
+.navbar-brand {
+  width: 200px;
+}
+
+.navbar-nav .nav-item a {
+  color: #424242;
+}
+
+.navbar-nav .nav-item a:hover {
+  color: #EF7373;
+  border-bottom: 2px solid #EF7373;
+}
+
+.nav-social {
+  list-style-type: none;
+}
+
+.nav-social li{
+  display: inline-block;
+  font-size: 1.3rem;
+  margin-right: 0.3rem;
+}
+
+.btn {
+  padding: 0.8rem 2rem;
+  /*width: 190px;*/
+  border-radius: 50px;
+}
+
+.btn-primary {
+  background-color: transparent;
+  border: 2px solid #000000;
+  color: #000000
+}
+
+.btn-primary:hover {
+  background-color: #000000;
+  color: #ffffff;
+  border: 2px solid #000000;
+}
+
+.btn-secondary{
+  background-color: #000000;
+  border: 2px solid #000000;
+}
+.btn-secondary:hover {
+  background-color: #EF7373;
+  border: 2px solid #EF7373;
+}
+
+.btn-third {
+  background-color: transparent;
+  border: 2px solid #EF7373;
+  color: #EF7373;
+}
+
+.btn-third:hover {
+  background-color: #EF7373;
+  border: 2px solid #EF7373;
+  color: #ffffff;
+}
+
+.text-muted {
+  color: #EF7373!important;
+}
+
+.section {
+  height: 70vh;
+  padding-bottom: 10rem;
+}
+
+@media (max-width: 576px) {
+  .section {
+    margin-top: 5rem;
+  }
+}
+
+.home-image {
+  position: absolute;
+  right: 300px;
+  height: 300px;
+  width: 400px;
+}
+
+.home .btn-third {
+  width: 165px;
+}
+
+.cake {
+  padding-top: 3rem;
+}
+.cake img {
+  margin-bottom: 1rem;
+}
+.cake h2 {
+  padding-bottom: 1rem;;
+}
+
+.cake h2 span {
+  font-size: 0.9rem;
+  background-color: #EF7373;
+  color: #ffffff!important;
+  padding: 0.3rem 0.5rem;
+  border-radius: 25px;
+}
+
+.cake .btn {
+  margin-top: 1rem;
+}
+
+.form-section h4 {
+  color: #EF7373;
+}
+
+input:is([type="radio"], [type="checkbox"]) {
+  border: 2px solid #EF7373;
+}
+
+.featurette-divider {
+  margin: 5rem 0;
+}
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+.progress {
+  margin: 1rem 0;
+  padding: 0;
+}
+
+.progress-bar span {
+  font-size: 0.85rem;
+}
+
+span.progress-type {
+  font-size: 1rem;
+  margin-left: 1rem;
+  color: #EF7373;
+  margin-top: 0.5rem;
+}
+
+.progress {height: 40px;} 
+
+.pedidos {
+  margin-bottom: 10rem;
+}
+
+.pedidos .btn {
+  padding: 0.5rem 1rem;
+  width: 50px;;
+}
+
+
+@media (min-width: 40em) {
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
