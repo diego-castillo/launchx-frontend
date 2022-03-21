@@ -1,0 +1,187 @@
+/* Variables
+-------------------------------------------------- */
+
+:root {
+    --main-font: 'Poppins', sans-serif;
+    --main-font-light: 400;
+    --main-font-regular: 500;
+    --main-font-bold: 600;
+    --main-letterspacing-titles: -0.050rem;
+    --main-bg-color: #ffffff;
+    --main-brand-color: #2747c5;
+    --main-p-text-color: #6d7b93;
+    --main-title-text-color: #1f3e72;
+    --main-nav-color: #6d7b93;
+    --main-icon-yellow: #ffd012;
+    --main-button-gradient-1: #3959d7;
+    --main-button-gradient-2: #2747c5;
+}
+
+
+/* Global Styles
+-------------------------------------------------- */
+body {
+    background-color: var(--main-bg-color);
+    font-family: var(--main-font);
+    color: var(--main-p-text-color);
+}
+
+h1 {
+    color: var(--main-title-text-color);
+    font-weight: var(--main-font-regular)!important;
+    letter-spacing: var(--main-letterspacing-titles);
+}
+
+
+/* Navbar
+-------------------------------------------------- */
+.navbar {
+    background: rgba( 255, 255, 255, 0.85 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+}
+
+.navbar-nav .nav-link {
+    color: var(--main-nav-color);
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--main-button-gradient-1);
+}
+
+.navbar-nav .btn-outline-dark.active {
+    background: rgb(57,89,215);
+    background: linear-gradient(90deg, rgba(57,89,215,1) 0%, rgba(39,71,197,1) 100%);
+    border: none;
+    padding: 0.70rem 1rem;
+}
+
+/* Header
+-------------------------------------------------- */
+header {
+    height: 100%;
+}
+
+header .hero-img {
+    width: 105%;
+    object-fit: contain;
+    margin-left: -4rem;
+}
+
+header .list-group .list-group-item {
+    border: 0;
+    padding-left: 0;
+    color: var(--main-title-text-color)
+}
+
+header .list-group .list-group-item span.icon-shape {
+    margin-right: 0.5rem;
+
+}
+
+/* Shape */
+.icon-shape {
+    border-radius: 0.25em; 
+    box-shadow: 0 0 60px 0 rgba( 31, 38, 135, 0.37 );
+    display: inline-block;
+    padding: 0.5rem 0.70rem;
+    font-size: 1rem;
+}
+
+.icon-shape.icon-blue {
+    color: var(--main-brand-color);
+    background-color: rgba(18, 121, 255, 0.1);
+    box-shadow: 0px 0px 5px 0px rgba( 255, 215, 18, 0.10 );
+    backdrop-filter: blur( 20 );
+    -webkit-backdrop-filter: blur( 10.5px );
+}
+
+.icon-shape.icon-yellow {
+    color: var(--main-icon-yellow);
+    background-color: rgba( 255, 215, 18, 0.10 );
+    box-shadow: 0px 0px 5px 0px rgba( 255, 215, 18, 0.10 );
+    backdrop-filter: blur( 20 );
+    -webkit-backdrop-filter: blur( 10.5px );
+}
+
+/* Button */
+.btn-outline-dark {
+    background: rgb(57,89,215);
+    background: linear-gradient(90deg, rgba(57,89,215,1) 0%, rgba(39,71,197,1) 100%);
+    border: none;
+    color: #ffffff;
+}
+
+
+header .schedule-container {
+    margin-top: 3rem;
+    position: relative;
+    z-index: 2;
+}
+
+header .schedule-container h5 {
+    color: #1f3e72;
+    margin-bottom: 2rem;
+}
+
+header .schedule-container .schedule {
+    /*background-color: #1f3e72;*/
+    padding: 2rem 2.5rem;
+    background: rgba( 255, 255, 255, 0.65 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 25px );
+    -webkit-backdrop-filter: blur( 25px );
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+header .schedule-container .schedule .schedule-item .schedule-item-title {
+    color: var(--main-p-text-color);
+    font-weight: var(--main-font-regular)!important;
+    margin: 0 0 0.5rem 0;
+    padding: 0;
+}
+
+header .schedule-container .schedule .schedule-item .schedule-item-text {
+    color: var(--main-title-text-color);
+    font-weight: var(--main-font-bold)!important;
+    margin: -0.5rem 0 0 2.85rem;
+    padding: 0;
+}
+
+header .schedule-container .schedule .schedule-item .schedule-item-title .icon-shape {
+    margin-right: 0.50rem;
+    padding: 0.5rem 0.70rem;
+    font-size: 0.85rem;
+}
+
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    header {
+        padding: 0!important;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    header .hero-img {
+        width: 100%;
+    }
+    header .schedule-container {
+        margin-top: -10rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+    header {
+        padding: 100px 0 0 0;
+    }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
